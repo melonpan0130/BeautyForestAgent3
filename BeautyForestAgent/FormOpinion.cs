@@ -16,12 +16,6 @@ namespace BeautyForestAgent
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("건의사항이 보내졌습니다.", "건의사항 발송");
-            this.Close();
-        }
-
         private void TsbtnFont_Click(object sender, EventArgs e)
         {
             DialogResult result = this.fontDlg.ShowDialog(); // 사용자입력 대기, 코드 멈춤
@@ -48,6 +42,12 @@ namespace BeautyForestAgent
                     MessageBox.Show("색 변경을 취소하셨습니다", "알림");
                     break;
             }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("건의사항이 보내졌습니다.", "건의사항 발송");
+            this.Close();
         }
     }
 }

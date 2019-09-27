@@ -15,7 +15,7 @@ namespace BeautyForestAgent
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormOption());
+            Application.Run(new Form1());
         }
     }
 }

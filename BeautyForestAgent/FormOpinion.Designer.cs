@@ -28,30 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOption));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tlsMenu = new System.Windows.Forms.ToolStrip();
+            this.tsbtnFont = new System.Windows.Forms.ToolStripButton();
+            this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
             this.fontDlg = new System.Windows.Forms.FontDialog();
             this.colorDlg = new System.Windows.Forms.ColorDialog();
             this.rtbText = new System.Windows.Forms.RichTextBox();
-            this.tsbtnFont = new System.Windows.Forms.ToolStripButton();
-            this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.tlsMenu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(10, 264);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(464, 46);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // statusStrip1
             // 
@@ -81,15 +70,6 @@
             this.tlsMenu.TabIndex = 2;
             this.tlsMenu.Text = "toolStrip1";
             // 
-            // rtbText
-            // 
-            this.rtbText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbText.Location = new System.Drawing.Point(0, 25);
-            this.rtbText.Name = "rtbText";
-            this.rtbText.Size = new System.Drawing.Size(326, 176);
-            this.rtbText.TabIndex = 3;
-            this.rtbText.Text = resources.GetString("rtbText.Text");
-            // 
             // tsbtnFont
             // 
             this.tsbtnFont.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -110,19 +90,38 @@
             this.tsbtnColor.Text = "toolStripButton2";
             this.tsbtnColor.Click += new System.EventHandler(this.TsbtnColor_Click);
             // 
-            // Form1
+            // rtbText
+            // 
+            this.rtbText.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rtbText.Location = new System.Drawing.Point(0, 25);
+            this.rtbText.Name = "rtbText";
+            this.rtbText.Size = new System.Drawing.Size(326, 130);
+            this.rtbText.TabIndex = 3;
+            this.rtbText.Text = resources.GetString("rtbText.Text");
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 161);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(326, 37);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "보내기";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // FormOption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 223);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.rtbText);
             this.Controls.Add(this.tlsMenu);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FormOption";
             this.Text = "3117 정은주";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -135,14 +134,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStrip tlsMenu;
         private System.Windows.Forms.FontDialog fontDlg;
         private System.Windows.Forms.ColorDialog colorDlg;
-        private System.Windows.Forms.RichTextBox rtbText;
         private System.Windows.Forms.ToolStripButton tsbtnFont;
         private System.Windows.Forms.ToolStripButton tsbtnColor;
+        private System.Windows.Forms.RichTextBox rtbText;
+        private System.Windows.Forms.Button button1;
     }
 }

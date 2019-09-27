@@ -57,7 +57,7 @@ namespace BeautyForestAgent
         private void 건의사항ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.statusMessage.Text = "무료로 건의사항을 보낼 수 있습니다!";
-            Form1 m = new Form1();
+            FormOption m = new FormOption();
             m.ShowDialog();
         }
     }
